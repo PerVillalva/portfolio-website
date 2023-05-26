@@ -58,7 +58,7 @@ function App() {
                     amount='all'
                     onViewportEnter={() => setSelectedPage('projects')}
                 >
-                    <Projects />
+                    <Blog />
                 </motion.div>
             </div>
 
@@ -67,9 +67,9 @@ function App() {
                 <motion.div
                     margin='0 0 -200px 0'
                     amount='all'
-                    onViewportEnter={() => setSelectedPage('blog')}
+                    onViewportEnter={() => setSelectedPage('articles')}
                 >
-                    <Blog />
+                    <Projects />
                 </motion.div>
             </div>
 

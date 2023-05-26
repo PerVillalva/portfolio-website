@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
+import SocialMediaIcons from '../components/SocialMediaIcons';
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
     const lowerCasePage = page.toLowerCase().replace(' ', '-');
@@ -41,7 +42,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                             setSelectedPage={setSelectedPage}
                         />
                         <Link
-                            page='Blog'
+                            page='Articles'
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
@@ -50,6 +51,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
+
                         <Link
                             page='Contact'
                             selectedPage={selectedPage}
@@ -88,7 +90,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                                 setSelectedPage={setSelectedPage}
                             />
                             <Link
-                                page='Blog'
+                                page='Articles'
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                             />

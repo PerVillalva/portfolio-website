@@ -51,10 +51,10 @@ const Projects = () => {
                     viewport={{ once: true, amount: 0.2 }}
                 >
                     <ProjectItem
-                        title='Property Finder'
-                        backgroundImg={'../assets/project-1.jpeg'}
+                        title='React TODO'
+                        backgroundImg={'../assets/project-1.png'}
                         projectUrl='/property'
-                        tech='React JS'
+                        tech='React JS, Tailwind CSS'
                     />
                     <ProjectItem
                         title='Crypto App'

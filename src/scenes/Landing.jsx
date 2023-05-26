@@ -54,7 +54,7 @@ const Landing = ({ setSelectedPage }) => {
                         Villalva
                     </p>
 
-                    <p className='mt-10 mb-7 text-md text-center md:text-start'>
+                    <p className='mt-10 mb-7 text-lg text-center md:text-start text-gray-400'>
                         Helping developers build scalable, human-like bots for
                         data extraction and web automation. Teaching about web
                         scraping and automation in Node.js.
@@ -62,7 +62,7 @@ const Landing = ({ setSelectedPage }) => {
                 </motion.div>
 
                 {/* CALL TO ACTIONS */}
-                <motion.div
+                {/* <motion.div
                     className='flex mt-5 justify-center md:justify-start'
                     initial='hidden'
                     whileInView='visible'
@@ -80,7 +80,7 @@ const Landing = ({ setSelectedPage }) => {
                     >
                         Contact Me
                     </AnchorLink>
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div
                     className='flex justify-center md:justify-start'
