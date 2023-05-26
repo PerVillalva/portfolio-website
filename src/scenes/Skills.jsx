@@ -3,24 +3,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import { FaCode, FaShareAltSquare, FaMugHot } from 'react-icons/fa';
 import SkillList from '../components/SkillList';
-
-const tech = [
-    'JS/TS',
-    'Node.js',
-    'Python',
-    'React',
-    'React Native',
-    'Redux',
-    'Git',
-    'MongoDB',
-];
-const marketing = ['SEO', 'Hubspot', 'Email marketing', 'Google Analytics'];
-const other = [
-    'Web scraping',
-    'Technical writing',
-    'Teaching',
-    'Web automation',
-];
+import { skills } from '../utils/data';
 
 const Skills = () => {
     const isAboveLarge = useMediaQuery('(min-width: 1060px)');
@@ -84,17 +67,11 @@ const Skills = () => {
                         visible: { opacity: 1, y: 0 },
                     }}
                 >
-                    <div className='relative h-32'>
-                        <div className='z-10'>
-                            <p className='font-playfair font-semibold text-5xl mx-auto'>
-                                <FaCode className='text-teal-500' />
-                            </p>
-                            <p className='font-playfair font-semibold text-3xl mt-3'>
-                                Technologies
-                            </p>
-                        </div>
-                    </div>
-                    <SkillList skills={tech} />
+                    <SkillList
+                        icon={<FaCode />}
+                        title={skills.tech.title}
+                        skills={skills.tech.list}
+                    />
                 </motion.div>
 
                 {/* Marketing */}
@@ -109,20 +86,13 @@ const Skills = () => {
                         visible: { opacity: 1, y: 0 },
                     }}
                 >
-                    <div className='relative h-32'>
-                        <div className='z-10'>
-                            <p className='font-playfair font-semibold text-5xl'>
-                                <FaShareAltSquare className='text-teal-500' />
-                            </p>
-                            <p className='font-playfair font-semibold text-3xl mt-3'>
-                                Digital Marketing
-                            </p>
-                        </div>
-                    </div>
-                    <p className='mt-5'>
-                        <SkillList skills={marketing} />
-                    </p>
+                    <SkillList
+                        icon={<FaShareAltSquare />}
+                        title={skills.marketing.title}
+                        skills={skills.marketing.list}
+                    />
                 </motion.div>
+
                 {/* Other */}
                 <motion.div
                     className='md:w-1/3 mt-10'
@@ -135,17 +105,11 @@ const Skills = () => {
                         visible: { opacity: 1, y: 0 },
                     }}
                 >
-                    <div className='relative h-32'>
-                        <div className='z-10'>
-                            <p className='font-playfair font-semibold text-5xl'>
-                                <FaMugHot className='text-teal-500' />
-                            </p>
-                            <p className='font-playfair font-semibold text-3xl mt-3'>
-                                Other
-                            </p>
-                        </div>
-                    </div>
-                    <SkillList skills={other} />
+                    <SkillList
+                        icon={<FaMugHot />}
+                        title={skills.other.title}
+                        skills={skills.other.list}
+                    />
                 </motion.div>
             </div>
         </section>

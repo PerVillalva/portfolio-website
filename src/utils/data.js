@@ -32,3 +32,46 @@ export const articles = [
             'Axios and Cheerio is a powerful combination for web scraping in Node.js, fitting the bill for both experienced and beginner scrapers.',
     },
 ];
+
+export const skills = {
+    tech: {
+        title: 'Technologies',
+        list: [
+            'JS/TS',
+            'Node.js',
+            'Python',
+            'React',
+            'React Native',
+            'Redux',
+            'Git',
+            'MongoDB',
+        ],
+    },
+    marketing: {
+        title: 'Digital Marketing',
+        list: ['SEO', 'Hubspot', 'Email marketing', 'Google Analytics'],
+    },
+
+    other: {
+        title: 'Other',
+        list: [
+            'Web scraping',
+            'Technical writing',
+            'Teaching',
+            'Web automation',
+        ],
+    },
+};
+
+export const smIconContent = [
+    {
+        link: 'https://www.linkedin.com/in/percival-villalva/',
+        tooltip: "Let's connect!",
+        id: 'li',
+    },
+    {
+        link: 'https://github.com/PerVillalva',
+        tooltip: 'Explore my code!',
+        id: 'gh',
+    },
+];

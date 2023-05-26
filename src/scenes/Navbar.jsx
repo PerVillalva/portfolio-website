@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { Tooltip } from 'react-tooltip';
+import { smIconContent } from '../utils/data';
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
     const lowerCasePage = page.toLowerCase().replace(' ', '-');
@@ -33,7 +36,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 {/* DESKTOP NAV */}
                 {isAboveSmallScreens ? (
                     <div
-                        className={`flex justify-between gap-16 text-sm font-semibold`}
+                        className={`flex justify-between gap-12 text-md font-semibold align-items-center`}
                     >
                         <Link
                             page='Articles'
@@ -50,6 +53,30 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
+                        <div className='flex flex-row gap-6'>
+                            {smIconContent.map((media) => {
+                                const IconComponent =
+                                    media.id === 'li' ? BsLinkedin : BsGithub;
+
+                                return (
+                                    <>
+                                        <a
+                                            data-tooltip-id={media.id}
+                                            data-tooltip-placement='bottom'
+                                            href={media.icon}
+                                            className='hover:text-teal-400 transition duration-500'
+                                            target='_blank'
+                                            rel='noreferrer'
+                                        >
+                                            <IconComponent size='22' />
+                                        </a>
+                                        <Tooltip id={media.id}>
+                                            {media.tooltip}
+                                        </Tooltip>
+                                    </>
+                                );
+                            })}
+                        </div>
                     </div>
                 ) : (
                     <button
