@@ -9,8 +9,6 @@ import Navbar from './scenes/Navbar';
 import Skills from './scenes/Skills.jsx';
 import Blog from './scenes/Blog';
 import Contact from './scenes/Contact';
-import CurrentlyPlaying from './components/CurrentlyPlaying';
-import Hobbies from './scenes/Hobbies';
 
 function App() {
     const [selectedPage, setSelectedPage] = useState('home');
@@ -94,17 +92,6 @@ function App() {
                     onViewportEnter={() => setSelectedPage('contact')}
                 >
                     <Contact />
-                </motion.div>
-            </div>
-
-            <LineGradient width={'w-10/12'} margin={'m-auto'} />
-            <div className='w-5/6 mx-auto md:h-full'>
-                <motion.div
-                    margin='0 0 -200px 0'
-                    amount='all'
-                    onViewportEnter={() => setSelectedPage('contact')}
-                >
-                    <Hobbies />
                 </motion.div>
             </div>
         </div>
