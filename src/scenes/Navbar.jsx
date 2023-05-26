@@ -25,7 +25,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     const isAboveSmallScreens = useMediaQuery('(min-width: 768px)');
     const navbarBackground = isTopOfPage
         ? ' '
-        : 'bg-opaque-navy backdrop-blur-md bg-opaque-navy md:shadow-sm md:shadow-navy-shadow [&>div>h4]:text-teal-500';
+        : 'bg-navy md:backdrop-blur-md md:bg-opacity-95 md:shadow-sm shadow-navy-shadow [&>div>h4]:text-teal-500';
     return (
         <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-4`}>
             <div className='flex items-center justify-between mx-auto w-5/6'>
@@ -87,7 +87,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                     </button>
                 )}
 
-                {/* MOBILE MENU POPUP */}
+                {/* MOBILE MENU */}
                 {!isAboveSmallScreens && isMenuToggled && (
                     <div className='fixed right-0 bottom-0 h-full bg-navy w-[300px]'>
                         {/* CLOSE ICON */}
@@ -103,7 +103,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                         </div>
 
                         {/* MENU ITEMS */}
-                        <div className='flex flex-col gap-10 ml-[33%] text-2x'>
+                        <div className='flex flex-col gap-10 ml-[33%] text-2x bg-navy'>
                             <Link
                                 page='Articles'
                                 selectedPage={selectedPage}
