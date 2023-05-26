@@ -8,7 +8,6 @@ import useMediaQuery from './hooks/useMediaQuery.jsx';
 import Navbar from './scenes/Navbar';
 import Skills from './scenes/Skills.jsx';
 import Blog from './scenes/Blog';
-import Contact from './scenes/Contact';
 
 function App() {
     const [selectedPage, setSelectedPage] = useState('home');
@@ -56,7 +55,7 @@ function App() {
                 <motion.div
                     margin='0 0 -200px 0'
                     amount='all'
-                    onViewportEnter={() => setSelectedPage('projects')}
+                    onViewportEnter={() => setSelectedPage('articles')}
                 >
                     <Blog />
                 </motion.div>
@@ -67,7 +66,7 @@ function App() {
                 <motion.div
                     margin='0 0 -200px 0'
                     amount='all'
-                    onViewportEnter={() => setSelectedPage('articles')}
+                    onViewportEnter={() => setSelectedPage('projects')}
                 >
                     <Projects />
                 </motion.div>
@@ -81,17 +80,6 @@ function App() {
                     onViewportEnter={() => setSelectedPage('skills')}
                 >
                     <Skills />
-                </motion.div>
-            </div>
-
-            <LineGradient width={'w-10/12'} margin={'m-auto'} />
-            <div className='w-5/6 mx-auto md:h-full'>
-                <motion.div
-                    margin='0 0 -200px 0'
-                    amount='all'
-                    onViewportEnter={() => setSelectedPage('contact')}
-                >
-                    <Contact />
                 </motion.div>
             </div>
         </div>

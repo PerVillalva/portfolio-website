@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import useMediaQuery from '../hooks/useMediaQuery';
-import SocialMediaIcons from '../components/SocialMediaIcons';
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
     const lowerCasePage = page.toLowerCase().replace(' ', '-');
@@ -37,23 +36,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                         className={`flex justify-between gap-16 text-sm font-semibold`}
                     >
                         <Link
-                            page='Projects'
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                        />
-                        <Link
                             page='Articles'
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
                         <Link
-                            page='Skills'
+                            page='Projects'
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
-
                         <Link
-                            page='Contact'
+                            page='Skills'
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />
@@ -85,22 +78,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                         {/* MENU ITEMS */}
                         <div className='flex flex-col gap-10 ml-[33%] text-2x'>
                             <Link
-                                page='Projects'
-                                selectedPage={selectedPage}
-                                setSelectedPage={setSelectedPage}
-                            />
-                            <Link
                                 page='Articles'
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                             />
                             <Link
-                                page='Skills'
+                                page='Projects'
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                             />
                             <Link
-                                page='Contact'
+                                page='Skills'
                                 selectedPage={selectedPage}
                                 setSelectedPage={setSelectedPage}
                             />

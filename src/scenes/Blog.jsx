@@ -5,7 +5,7 @@ import { articles } from '../utils/data';
 
 const Blog = () => {
     return (
-        <section id='articles' className='pt-40 pb-28'>
+        <section id='articles' className='pt-48 pb-32'>
             {/* HEADINGS */}
             <motion.div
                 className='md:w-2/5 mx-auto text-center'

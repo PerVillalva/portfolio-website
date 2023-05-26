@@ -1,6 +1,5 @@
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import SocialMediaIcons from '../components/SocialMediaIcons';
 
 const Landing = ({ setSelectedPage }) => {
@@ -60,27 +59,6 @@ const Landing = ({ setSelectedPage }) => {
                         scraping and automation in Node.js.
                     </p>
                 </motion.div>
-
-                {/* CALL TO ACTIONS */}
-                {/* <motion.div
-                    className='flex mt-5 justify-center md:justify-start'
-                    initial='hidden'
-                    whileInView='visible'
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{ delay: 0.2, duration: 0.5 }}
-                    variants={{
-                        hidden: { opacity: 0, x: -50 },
-                        visible: { opacity: 1, x: 0 },
-                    }}
-                >
-                    <AnchorLink
-                        className='bg-teal-300 hover:bg-transparent outline hover:outline-teal-500 text-deep-blue rounded-lg py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500 mt-2 hover:scale-105'
-                        onClick={() => setSelectedPage('contact')}
-                        href='#contact'
-                    >
-                        Contact Me
-                    </AnchorLink>
-                </motion.div> */}
 
                 <motion.div
                     className='flex justify-center md:justify-start'
