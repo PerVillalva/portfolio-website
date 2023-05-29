@@ -3,7 +3,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const ProjectItem = ({ title, description, ghUrl, liveUrl }) => {
     return (
-        <div class='w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
+        <div class='w-full p-4 text-center border rounded-lg shadow sm:p-8 bg-gray-900 border-gray-800'>
             <h5 class='mb-2 text-3xl font-bold text-gray-900 dark:text-white'>
                 {title}
             </h5>
@@ -15,7 +15,7 @@ const ProjectItem = ({ title, description, ghUrl, liveUrl }) => {
                     href={ghUrl}
                     target='_blank'
                     rel='noreferrer'
-                    className='flex items-center w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700'
+                    className='flex items-center w-full sm:w-auto text-white rounded-lg justify-center px-4 py-2.5 hover:bg-teal-800 outline outline-teal-500'
                 >
                     <BsGithub size='20' className='mr-3' />
                     <div class='text-left'>
@@ -28,7 +28,7 @@ const ProjectItem = ({ title, description, ghUrl, liveUrl }) => {
                     href={liveUrl}
                     target='_blank'
                     rel='noreferrer'
-                    className='flex items-center w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700'
+                    className='flex items-center w-full sm:w-auto text-white rounded-lg justify-center px-4 py-2.5 hover:bg-teal-800 outline outline-teal-500'
                     alt=''
                 >
                     <FaExternalLinkAlt size='20' className='mr-3' />

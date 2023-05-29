@@ -15,7 +15,6 @@ const container = {
 const Projects = () => {
     return (
         <section id='projects' className='pt-48 pb-48'>
-            {/* HEADINGS */}
             <motion.div
                 className='md:w-2/5 mx-auto text-center'
                 initial='hidden'
@@ -29,7 +28,7 @@ const Projects = () => {
             >
                 <div>
                     <p className='font-playfair font-semibold text-4xl'>
-                        PROJECTS
+                        Projects
                     </p>
                     <div className='flex justify-center mt-5 mb-16'>
                         <LineGradient width='w-2/3' />
@@ -40,7 +39,7 @@ const Projects = () => {
             {/* PROJECTS */}
             <div className='flex justify-center flex-col items-center'>
                 <motion.div
-                    className='grid md:grid-cols-2 gap-8'
+                    className='md:w-2/4 grid md:grid-cols-1 gap-8'
                     variants={container}
                     initial='hidden'
                     whileInView='visible'
