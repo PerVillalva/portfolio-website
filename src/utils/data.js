@@ -1,3 +1,4 @@
+// BLOG SCENE
 export const articles = [
     {
         id: 1,
@@ -30,5 +31,68 @@ export const articles = [
         title: 'Web scraping in Node.js with Axios and Cheerio',
         description:
             'Axios and Cheerio is a powerful combination for web scraping in Node.js, fitting the bill for both experienced and beginner scrapers.',
+    },
+];
+
+// SKILLS SCENE
+export const skills = {
+    tech: {
+        title: 'Technologies',
+        list: [
+            'JS/TS',
+            'Node.js',
+            'Python',
+            'React',
+            'React Native',
+            'Redux',
+            'Git',
+            'MongoDB',
+        ],
+    },
+    marketing: {
+        title: 'Digital Marketing',
+        list: ['SEO', 'Hubspot', 'Email marketing', 'Google Analytics'],
+    },
+
+    other: {
+        title: 'Other',
+        list: [
+            'Web scraping',
+            'Technical writing',
+            'Teaching',
+            'Web automation',
+        ],
+    },
+};
+
+// PROJECTS SCENE
+export const projects = [
+    {
+        title: 'Zappos.com Data Extractor',
+        description:
+            'Zappos.com scraper built with TypeScript and Crawlee running within a Docker container on the Apify platform.',
+        ghUrl: 'https://github.com/PerVillalva/zappos-scraper-actor',
+        liveUrl: 'https://apify.com/perci/zappos-scraper',
+    },
+    {
+        title: 'React Task Tracker',
+        description:
+            'React-based personal productivity task tracking app using React Context API to manage application state.',
+        ghUrl: 'https://github.com/PerVillalva/react-todo-app',
+        liveUrl: 'https://astro-todo-app.netlify.app/',
+    },
+];
+
+// SOCIAL MEDIA ICONS
+export const smIconContent = [
+    {
+        link: 'https://www.linkedin.com/in/percival-villalva/',
+        tooltip: "Let's connect!",
+        id: 'li',
+    },
+    {
+        link: 'https://github.com/PerVillalva',
+        tooltip: 'Explore my code!',
+        id: 'gh',
     },
 ];

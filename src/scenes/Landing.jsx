@@ -2,7 +2,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import SocialMediaIcons from '../components/SocialMediaIcons';
 
-const Landing = ({ setSelectedPage }) => {
+const Landing = () => {
     const isAboveMediumScreens = useMediaQuery('(min-width: 1060px)');
 
     return (
@@ -17,7 +17,6 @@ const Landing = ({ setSelectedPage }) => {
                         <img
                             src='assets/profile.jpeg'
                             alt='Percival Villalva'
-                            // height={176}
                             width={450}
                             className='rounded-full filter grayscale hover:grayscale-0'
                         />
@@ -35,9 +34,7 @@ const Landing = ({ setSelectedPage }) => {
                 )}
             </div>
 
-            {/* MAIN SECTION */}
             <div className='z-30 basis-2/5 mt-12 md:mt-32'>
-                {/* HEADINGS */}
                 <motion.div
                     initial='hidden'
                     whileInView='visible'
@@ -47,16 +44,21 @@ const Landing = ({ setSelectedPage }) => {
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 },
                     }}
+                    className='text-center'
                 >
                     <p className='text-6xl font-playfair z-10 text-center md:text-start'>
                         Percival {''}
                         Villalva
                     </p>
 
-                    <p className='mt-10 mb-7 text-lg text-center md:text-start text-gray-400'>
-                        Helping developers build scalable, human-like bots for
-                        data extraction and web automation. Teaching about web
-                        scraping and automation in Node.js.
+                    <p className='mt-10 mb-7 text-lg md:text-start text-gray-400'>
+                        Hey there! I'm passionate about building and assisting
+                        developers in crafting extraordinary digital experiences
+                        and applications that have a positive impact on our
+                        lives.
+                        <div className='mt-4' />
+                        Let's join forces and amplify the reach of remarkable
+                        technologies together!
                     </p>
                 </motion.div>
 

@@ -1,6 +1,6 @@
 const BlogCard = ({ title, description, link, image }) => {
     return (
-        <div className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 transition transform duration-500 hover:shadow-lg hover:shadow-teal-600 hover:translate-x-1 hover:-translate-y-1'>
+        <div className='max-w-sm border border-gray-200 rounded-lg shadow bg-gray-900 border-gray-800 transition transform duration-500 hover:shadow-lg hover:shadow-teal-600 hover:translate-x-1 hover:-translate-y-1'>
             <a
                 href={link}
                 className='flex flex-col h-full'

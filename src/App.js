@@ -8,6 +8,7 @@ import useMediaQuery from './hooks/useMediaQuery.jsx';
 import Navbar from './scenes/Navbar';
 import Skills from './scenes/Skills.jsx';
 import Blog from './scenes/Blog';
+import { Footer } from './components/Footer';
 
 function App() {
     const [selectedPage, setSelectedPage] = useState('home');
@@ -82,6 +83,8 @@ function App() {
                     <Skills />
                 </motion.div>
             </div>
+
+            <Footer />
         </div>
     );
 }

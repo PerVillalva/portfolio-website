@@ -6,7 +6,6 @@ import { articles } from '../utils/data';
 const Blog = () => {
     return (
         <section id='articles' className='pt-48 pb-32'>
-            {/* HEADINGS */}
             <motion.div
                 className='md:w-2/5 mx-auto text-center'
                 initial='hidden'
@@ -20,7 +19,7 @@ const Blog = () => {
             >
                 <div className='mb-16'>
                     <p className='font-playfair font-semibold text-4xl'>
-                        ARTICLES
+                        Articles
                     </p>
                     <div className='flex justify-center mt-5'>
                         <LineGradient width='w-2/3' />
@@ -30,7 +29,7 @@ const Blog = () => {
 
             <div className='flex justify-center flex-col items-center'>
                 <motion.div
-                    className='grid md:grid-cols-2 gap-10'
+                    className='grid md:grid-cols-2 gap-8'
                     initial='hidden'
                     whileInView='visible'
                     viewport={{ once: true, amount: 0.2 }}
@@ -46,7 +45,7 @@ const Blog = () => {
                     ))}
                 </motion.div>
                 <a
-                    className='bg-teal-300 hover:bg-transparent outline hover:outline-teal-500 text-deep-blue rounded-lg py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500 mt-2 hover:scale-105 text-center mt-20 px-20 py-5'
+                    className='outline hover:bg-teal-800 outline-teal-500 text-white rounded-lg py-3 px-7 font-semibold hover:bg-blue transition duration-500 mt-2 hover:scale-105 text-center mt-20 px-20 py-5'
                     href='https://blog.apify.com/author/percival/'
                     target='_blank'
                     rel='noreferrer'
