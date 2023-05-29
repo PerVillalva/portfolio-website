@@ -1,6 +1,7 @@
 import LineGradient from '../components/LineGradient';
 import { motion } from 'framer-motion';
 import ProjectItem from '../components/ProjectItem';
+import { projects } from '../utils/data';
 
 const container = {
     hidden: {},
@@ -30,19 +31,14 @@ const Projects = () => {
                     <p className='font-playfair font-semibold text-4xl'>
                         PROJECTS
                     </p>
-                    <div className='flex justify-center mt-5'>
+                    <div className='flex justify-center mt-5 mb-16'>
                         <LineGradient width='w-2/3' />
                     </div>
                 </div>
-                <p className='mt-10 mb-10'>
-                    Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet
-                    integer ut fames odio in at. At magna ornare dictum lectus.
-                    Purus massa morbi purus nec eget eleifend ut elit.
-                </p>
             </motion.div>
 
             {/* PROJECTS */}
-            <div className='flex justify-center'>
+            <div className='flex justify-center flex-col items-center'>
                 <motion.div
                     className='grid md:grid-cols-2 gap-8'
                     variants={container}
@@ -50,30 +46,14 @@ const Projects = () => {
                     whileInView='visible'
                     viewport={{ once: true, amount: 0.2 }}
                 >
-                    <ProjectItem
-                        title='React TODO'
-                        backgroundImg={'../assets/project-1.png'}
-                        projectUrl='/property'
-                        tech='React JS, Tailwind CSS'
-                    />
-                    <ProjectItem
-                        title='Crypto App'
-                        backgroundImg={'../assets/project-2.jpeg'}
-                        projectUrl='/crypto'
-                        tech='React JS'
-                    />
-                    <ProjectItem
-                        title='Netflix App'
-                        backgroundImg={'../assets/project-3.jpeg'}
-                        projectUrl='/netflix'
-                        tech='React JS'
-                    />
-                    <ProjectItem
-                        title='Twitch UI'
-                        backgroundImg={'../assets/project-4.jpeg'}
-                        projectUrl='/twitch'
-                        tech='Next JS'
-                    />
+                    {projects.map((project) => (
+                        <ProjectItem
+                            title={project.title}
+                            description={project.description}
+                            ghUrl={project.ghUrl}
+                            liveUrl={project.liveUrl}
+                        />
+                    ))}
                 </motion.div>
             </div>
         </section>

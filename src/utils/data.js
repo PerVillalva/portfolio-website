@@ -1,3 +1,4 @@
+// BLOG SCENE
 export const articles = [
     {
         id: 1,
@@ -33,6 +34,7 @@ export const articles = [
     },
 ];
 
+// SKILLS SCENE
 export const skills = {
     tech: {
         title: 'Technologies',
@@ -63,6 +65,25 @@ export const skills = {
     },
 };
 
+// PROJECTS SCENE
+export const projects = [
+    {
+        title: 'Zappos.com Data Extractor',
+        description:
+            'Zappos.com scraper built with TypeScript and Crawlee running within a Docker container on the Apify platform.',
+        ghUrl: 'https://github.com/PerVillalva/zappos-scraper-actor',
+        liveUrl: 'https://apify.com/perci/zappos-scraper',
+    },
+    {
+        title: 'React Task Tracker',
+        description:
+            'React-based personal productivity task tracking app using React Context API to manage application state.',
+        ghUrl: 'https://github.com/PerVillalva/react-todo-app',
+        liveUrl: 'https://astro-todo-app.netlify.app/',
+    },
+];
+
+// SOCIAL MEDIA ICONS
 export const smIconContent = [
     {
         link: 'https://www.linkedin.com/in/percival-villalva/',

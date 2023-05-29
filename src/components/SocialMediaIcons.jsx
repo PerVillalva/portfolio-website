@@ -20,7 +20,7 @@ const SocialMediaIcons = () => {
 
                 return (
                     <a
-                        href={media.icon}
+                        href={media.link}
                         className='hover:text-teal-400 hover:scale-105 hover:-translate-y-0.5 transition duration-500'
                         target='_blank'
                         rel='noreferrer'

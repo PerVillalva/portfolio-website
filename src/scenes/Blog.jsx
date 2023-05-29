@@ -6,7 +6,6 @@ import { articles } from '../utils/data';
 const Blog = () => {
     return (
         <section id='articles' className='pt-48 pb-32'>
-            {/* HEADINGS */}
             <motion.div
                 className='md:w-2/5 mx-auto text-center'
                 initial='hidden'
@@ -30,7 +29,7 @@ const Blog = () => {
 
             <div className='flex justify-center flex-col items-center'>
                 <motion.div
-                    className='grid md:grid-cols-2 gap-10'
+                    className='grid md:grid-cols-2 gap-8'
                     initial='hidden'
                     whileInView='visible'
                     viewport={{ once: true, amount: 0.2 }}

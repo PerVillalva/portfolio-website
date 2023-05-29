@@ -63,7 +63,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                                         <a
                                             data-tooltip-id={media.id}
                                             data-tooltip-placement='bottom'
-                                            href={media.icon}
+                                            href={media.link}
                                             className='hover:text-teal-400 transition duration-500'
                                             target='_blank'
                                             rel='noreferrer'
